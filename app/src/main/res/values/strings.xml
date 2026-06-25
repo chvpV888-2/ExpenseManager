@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ExpenseManager</string>
+    <string-array name="expense_categories">
+        <item>Travel &amp; Transport</item>
+        <item>Meals &amp; Food</item>
+        <item>Office Supplies</item>
+        <item>Hardware &amp; Software</item>
+    </string-array>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Expense Claim"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#212529"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/amountEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Amount ($)"
+            android:inputType="numberDecimal"
+            android:paddingLeft="12dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginBottom="16dp"/>
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/expense_categories"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/dateEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Date (YYYY-MM-DD)"
+            android:inputType="date"
+            android:paddingLeft="12dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/descriptionEt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Reason / Description"
+            android:gravity="top"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="24dp"/>
+        <Button
+            android:id="@+id/selectReceiptBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="📷 SELECT RECEIPT PHOTO"
+            android:backgroundTint="#6C757D"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/receiptStatusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No file selected"
+            android:textColor="#6C757D"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="SUBMIT REQUEST"
+            android:backgroundTint="#28A745"/>
+    </LinearLayout>
+</ScrollView>
